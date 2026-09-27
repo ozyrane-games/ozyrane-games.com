@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #090909;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+
+/* HERO */
+
+.hero {
+    height: 520px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.85)
+        ),
+        radial-gradient(
+            circle at center,
+            #3b1515 0%,
+            #160909 45%,
+            #050505 100%
+        );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid #3b1919;
+}
+
+.overlay {
+    width: 100%;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+.studio-name {
+    color: #d94b4b;
+    letter-spacing: 7px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    color: #bbbbbb;
+    font-size: 19px;
+}
+
+
+/* NAVIGATION */
+
+.navigation {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    padding: 22px;
+
+    background: rgba(10, 10, 10, 0.95);
+
+    border-bottom: 1px solid #272727;
+
+    z-index: 10;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    transition: 0.2s;
+}
+
+.navigation a:hover {
+    color: #d94b4b;
+}
+
+
+/* SECTIONS */
+
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 110px 30px;
+}
+
+.section-label {
+    color: #d94b4b;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.section p {
+    color: #c4c4c4;
+    margin-bottom: 18px;
+}
+
+
+/* GAME */
+
+.game-card {
+    padding: 35px;
+
+    background: #111111;
+
+    border: 1px solid #292929;
+    border-left: 4px solid #d94b4b;
+
+    margin-top: 30px;
+}
+
+.game-card h3 {
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+.game-status {
+    color: #d94b4b !important;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+button {
+    margin-top: 20px;
+
+    padding: 13px 20px;
+
+    background: #252525;
+    color: #777777;
+
+    border: 1px solid #3b3b3b;
+
+    cursor: not-allowed;
+}
+
+
+/* STATUS */
+
+.status {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 8px 14px;
+
+    color: #ffffff !important;
+
+    background: #401414;
+    border: 1px solid #6b2020;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 40px;
+
+    text-align: center;
+
+    border-top: 1px solid #222222;
+
+    color: #666666;
+}
