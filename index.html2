@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Phantom Pixel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="overlay">
+
+        <div class="hero-content">
+            <p class="studio-name">PHANTOM PIXEL</p>
+
+            <h1>Independent Game Development</h1>
+
+            <p class="hero-text">
+                Creating atmospheric worlds, stories and games.
+            </p>
+        </div>
+
+    </div>
+
+</header>
+
+
+<nav class="navigation">
+
+    <a href="#news">NEWS</a>
+    <a href="#games">GAMES</a>
+    <a href="#about">ABOUT</a>
+
+</nav>
+
+
+<main>
+
+    <!-- NEWS -->
+
+    <section id="news" class="section">
+
+        <p class="section-label">LATEST NEWS</p>
+
+        <h2>The Last Blade has begun development</h2>
+
+        <p class="date">September 28, 2026</p>
+
+        <p>
+            Phantom Pixel has officially started development of
+            <strong>The Last Blade</strong>, a 2D pixel-art dark fantasy
+            action platformer.
+        </p>
+
+        <p>
+            The game follows Elgart, a young knight who sets out to rescue
+            Princess Eliana from the ancient dragon Vargras.
+        </p>
+
+        <p>
+            The first part will focus on platforming, sword combat,
+            exploration, short cinematic scenes and a final battle
+            against the dragon.
+        </p>
+
+        <p class="status">
+            DEVELOPMENT: IN PROGRESS
+        </p>
+
+    </section>
+
+
+    <!-- GAMES -->
+
+    <section id="games" class="section">
+
+        <p class="section-label">PROJECTS</p>
+
+        <h2>The Last Blade</h2>
+
+        <div class="game-card">
+
+            <div>
+                <p class="game-status">IN DEVELOPMENT</p>
+
+                <h3>The Last Blade — Part I</h3>
+
+                <p>
+                    A dark fantasy 2D pixel-art action platformer.
+                </p>
+
+                <p>
+                    Explore the Black Forest, fight enemies,
+                    master the ancient blade Aethern and face
+                    the dragon Vargras.
+                </p>
+
+                <button disabled>DOWNLOAD — COMING SOON</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="section">
+
+        <p class="section-label">ABOUT</p>
+
+        <h2>Phantom Pixel</h2>
+
+        <p>
+            Phantom Pixel is an independent game development studio
+            focused on creating small original games, worlds and stories.
+        </p>
+
+        <p>
+            The studio is currently focused on its first project,
+            <strong>The Last Blade</strong>.
+        </p>
+
+        <p>
+            This website will document the development process,
+            showcase projects and provide downloads for released games.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Phantom Pixel</p>
+
+</footer>
+
+</body>
+</html>
