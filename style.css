@@ -9,190 +9,169 @@ html {
 }
 
 body {
-    background: #090909;
+    background: #0d0d0f;
     color: #eeeeee;
     font-family: Arial, sans-serif;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 
-/* HERO */
+/* Header */
 
-.hero {
-    height: 520px;
-
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.55),
-            rgba(0, 0, 0, 0.85)
-        ),
-        radial-gradient(
-            circle at center,
-            #3b1515 0%,
-            #160909 45%,
-            #050505 100%
-        );
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-bottom: 1px solid #3b1919;
-}
-
-.overlay {
-    width: 100%;
-    text-align: center;
-}
-
-.hero-content {
-    max-width: 900px;
-    margin: auto;
-    padding: 30px;
-}
-
-.studio-name {
-    color: #d94b4b;
-    letter-spacing: 7px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.hero h1 {
-    font-size: 52px;
-    margin-bottom: 20px;
-}
-
-.hero-text {
-    color: #bbbbbb;
-    font-size: 19px;
-}
-
-
-/* NAVIGATION */
-
-.navigation {
+header {
     position: sticky;
     top: 0;
 
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
 
-    padding: 22px;
+    padding: 20px 8%;
 
-    background: rgba(10, 10, 10, 0.95);
+    background: #111114;
+    border-bottom: 1px solid #29292e;
 
-    border-bottom: 1px solid #272727;
-
-    z-index: 10;
+    z-index: 100;
 }
 
-.navigation a {
-    color: #ffffff;
-    text-decoration: none;
+.logo {
+    font-size: 24px;
     font-weight: bold;
-    letter-spacing: 2px;
-
-    transition: 0.2s;
+    letter-spacing: 1px;
 }
 
-.navigation a:hover {
-    color: #d94b4b;
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: opacity 0.2s;
+}
+
+nav a:hover {
+    opacity: 0.6;
 }
 
 
-/* SECTIONS */
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* Sections */
 
 .section {
-    max-width: 900px;
-    margin: auto;
-    padding: 110px 30px;
+    min-height: 70vh;
+
+    padding: 100px 0;
+
+    scroll-margin-top: 80px;
 }
 
-.section-label {
-    color: #d94b4b;
-    letter-spacing: 4px;
-    font-size: 13px;
-    font-weight: bold;
+.section h1 {
+    font-size: 38px;
+    margin-bottom: 35px;
+}
+
+
+/* Cards */
+
+.card {
+    background: #151519;
+
+    border: 1px solid #29292e;
+    border-radius: 12px;
+
+    padding: 30px;
+
+    max-width: 800px;
+}
+
+.card h2 {
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
-.section h2 {
-    font-size: 38px;
-    margin-bottom: 25px;
+.card p {
+    color: #cfcfd3;
+    margin-top: 12px;
 }
 
-.section p {
-    color: #c4c4c4;
-    margin-bottom: 18px;
+.date {
+    font-size: 14px;
+    color: #88888f !important;
 }
-
-
-/* GAME */
-
-.game-card {
-    padding: 35px;
-
-    background: #111111;
-
-    border: 1px solid #292929;
-    border-left: 4px solid #d94b4b;
-
-    margin-top: 30px;
-}
-
-.game-card h3 {
-    font-size: 27px;
-    margin: 10px 0;
-}
-
-.game-status {
-    color: #d94b4b !important;
-    font-size: 13px;
-    letter-spacing: 2px;
-}
-
-button {
-    margin-top: 20px;
-
-    padding: 13px 20px;
-
-    background: #252525;
-    color: #777777;
-
-    border: 1px solid #3b3b3b;
-
-    cursor: not-allowed;
-}
-
-
-/* STATUS */
 
 .status {
     display: inline-block;
 
-    margin-top: 15px;
-    padding: 8px 14px;
+    font-size: 14px;
 
-    color: #ffffff !important;
+    padding: 5px 10px;
 
-    background: #401414;
-    border: 1px solid #6b2020;
+    border: 1px solid #44444b;
+    border-radius: 6px;
 
-    font-size: 13px;
-    letter-spacing: 2px;
+    color: #bbbbc2 !important;
 }
 
 
-/* FOOTER */
+/* Footer */
 
 footer {
-    padding: 40px;
-
     text-align: center;
 
-    border-top: 1px solid #222222;
+    padding: 30px;
 
-    color: #666666;
+    border-top: 1px solid #29292e;
+
+    color: #77777d;
+
+    font-size: 14px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section h1 {
+        font-size: 32px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
 }
