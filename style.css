@@ -1,1 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #0a0a0b;
+    color: #eeeeee;
+
+    font-family: "DM Sans", sans-serif;
+
+    line-height: 1.7;
+}
+
+
+/* MAIN */
+
+main {
+    width: 100%;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 25px;
+}
+
+
+.label {
+    color: #777;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 30px;
+}
+
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(60px, 10vw, 125px);
+
+    font-weight: 500;
+
+    line-height: 1;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+
+.subtitle {
+    color: #999;
+
+    font-size: 19px;
+}
+
+
+.line {
+    width: 70px;
+
+    height: 1px;
+
+    background: #333;
+
+    margin: 60px auto 0;
+}
+
+
+/* SECTIONS */
+
+.about,
+.game,
+.story {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 140px 30px;
+
+    text-align: center;
+
+    border-top: 1px solid #1d1d1f;
+}
+
+
+.about h2,
+.game h2,
+.story h2,
+.ending h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 6vw, 75px);
+
+    font-weight: 500;
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 45px;
+}
+
+
+.text {
+    max-width: 650px;
+
+    margin: 0 auto 25px;
+
+    color: #999;
+
+    font-size: 17px;
+}
+
+
+/* GAME */
+
+.game {
+    background: #0d0d0f;
+}
+
+
+.game h2 {
+    font-size: clamp(60px, 8vw, 100px);
+
+    margin-bottom: 25px;
+}
+
+
+.status {
+    display: inline-block;
+
+    color: #999;
+
+    border: 1px solid #333;
+
+    padding: 7px 15px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 40px;
+}
+
+
+/* STORY */
+
+.story {
+    padding-bottom: 160px;
+}
+
+
+/* END */
+
+.ending {
+    text-align: center;
+
+    padding: 150px 30px 120px;
+
+    border-top: 1px solid #1d1d1f;
+}
+
+
+.ending .line {
+    margin: 0 auto 80px;
+}
+
+
+.ending h2 {
+    margin-bottom: 40px;
+}
+
+
+.ending .text {
+    margin-bottom: 45px;
+}
+
+
+.final-text {
+    color: #ddd;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #1d1d1f;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    color: #555;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+
+    .about,
+    .game,
+    .story {
+        padding: 100px 25px;
+    }
+
+
+    .ending {
+        padding: 110px 25px 90px;
+    }
+
+
+    .text {
+        font-size: 16px;
+    }
+
+}
